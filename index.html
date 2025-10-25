@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katrina Chao • Microbiology Student</title>
+  <meta name="description" content="Katrina Chao — Microbiology student on the pre‑pharmacy track. Explore hobbies and extracurriculars.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a'
+            }
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 dark:bg-slate-950/90 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex h-16 items-center justify-between">
+        <a href="/" class="flex items-center gap-2 font-semibold text-slate-900 dark:text-white">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">KC</span>
+          <span>Katrina Chao</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/about.html" class="hover:text-brand-600">About</a>
+          <a href="/hobbies.html" class="hover:text-brand-600">Hobbies</a>
+          <a href="/extracurriculars.html" class="hover:text-brand-600">Extracurriculars</a>
+          <a href="/contact.html" class="hover:text-brand-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="theme-toggle" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">
+            <i data-lucide="moon" class="h-4 w-4"></i>
+          </button>
+          <button id="menu-toggle" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">
+            <i data-lucide="menu" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <div class="grid gap-2">
+          <a href="/about.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">About</a>
+          <a href="/hobbies.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Hobbies</a>
+          <a href="/extracurriculars.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Extracurriculars</a>
+          <a href="/contact.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 to-white dark:from-slate-900 dark:to-slate-950"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-24 sm:py-28">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">Hi, I'm Katrina — microbiology student on the pre‑pharmacy track</h1>
+            <p class="mt-5 text-lg text-slate-600 dark:text-slate-300">I love exploring the microscopic world, serving my community, and staying creative through hobbies. Explore my interests and activities below.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="/hobbies.html" class="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-white shadow hover:bg-brand-700">
+                <i data-lucide="sparkles" class="h-4 w-4"></i>
+                Explore hobbies
+              </a>
+              <a href="/extracurriculars.html" class="inline-flex items-center gap-2 rounded-lg border border-slate-200 dark:border-slate-800 px-4 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-900">
+                <i data-lucide="calendar" class="h-4 w-4"></i>
+                See activities
+              </a>
+            </div>
+            <div class="mt-10 flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+              <div class="flex items-center gap-2"><i data-lucide="flask-conical" class="h-4 w-4"></i> Microbiology</div>
+              <div class="flex items-center gap-2"><i data-lucide="pill" class="h-4 w-4"></i> Pre‑pharmacy</div>
+              <div class="flex items-center gap-2"><i data-lucide="heart" class="h-4 w-4"></i> Community focused</div>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://picsum.photos/seed/hero-lab/1200/900" alt="Katrina Chao hero placeholder" class="aspect-[4/3] w-full rounded-2xl object-cover shadow-inner" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-end justify-between">
+          <h2 class="text-2xl font-bold">Featured hobbies</h2>
+          <a href="/hobbies.html" class="text-brand-600 hover:text-brand-700">View all</a>
+        </div>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="/hobbies.html#photography" class="group rounded-xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-md transition">
+            <img src="https://picsum.photos/seed/photography/800/450" alt="Photography placeholder" class="aspect-video w-full rounded-lg object-cover dark:opacity-90" loading="lazy" />
+            <h3 class="mt-4 font-semibold group-hover:text-brand-600">Photography</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Capturing stories from lab life to everyday moments.</p>
+          </a>
+          <a href="/hobbies.html#baking" class="group rounded-xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-md transition">
+            <img src="https://picsum.photos/seed/baking/800/450" alt="Baking placeholder" class="aspect-video w-full rounded-lg object-cover dark:opacity-90" loading="lazy" />
+            <h3 class="mt-4 font-semibold group-hover:text-brand-600">Baking</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">From macarons to sourdough, experimenting with flavor.</p>
+          </a>
+          <a href="/hobbies.html#hiking" class="group rounded-xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-md transition">
+            <img src="https://picsum.photos/seed/hiking/800/450" alt="Hiking placeholder" class="aspect-video w-full rounded-lg object-cover dark:opacity-90" loading="lazy" />
+            <h3 class="mt-4 font-semibold group-hover:text-brand-600">Hiking</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Staying active outdoors and recharging in nature.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-slate-200/60 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-end justify-between">
+          <h2 class="text-2xl font-bold">Recent extracurriculars</h2>
+          <a href="/extracurriculars.html" class="text-brand-600 hover:text-brand-700">View all</a>
+        </div>
+        <ol class="mt-8 relative border-l border-slate-200 dark:border-slate-800 pl-6 space-y-8">
+          <li class="relative">
+            <span class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-brand-600"></span>
+            <div class="rounded-lg border border-slate-200 dark:border-slate-800 p-4">
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Volunteer, Community Health Fair</h3>
+                <span class="text-xs text-slate-500">2025</span>
+              </div>
+              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Assisted pharmacists and guided visitors to screenings.</p>
+            </div>
+          </li>
+          <li class="relative">
+            <span class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-brand-600"></span>
+            <div class="rounded-lg border border-slate-200 dark:border-slate-800 p-4">
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Lab Assistant, Microbiology Dept</h3>
+                <span class="text-xs text-slate-500">2024</span>
+              </div>
+              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Prepared media, maintained cultures, and logged results.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 items-center">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-8">
+          <h3 class="text-xl font-semibold">Looking ahead</h3>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">I'm excited to continue growing in healthcare and patient advocacy while building strong scientific foundations for pharmacy school.</p>
+          <a href="/contact.html" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-white shadow hover:bg-brand-700">
+            <i data-lucide="send" class="h-4 w-4"></i>
+            Get in touch
+          </a>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-8">
+          <h3 class="text-xl font-semibold">Quick facts</h3>
+          <div class="mt-4 grid grid-cols-2 gap-4 text-sm">
+            <div class="rounded-lg bg-slate-50 dark:bg-slate-900 p-4">
+              <div class="text-slate-500">Major</div>
+              <div class="font-medium">Microbiology</div>
+            </div>
+            <div class="rounded-lg bg-slate-50 dark:bg-slate-900 p-4">
+              <div class="text-slate-500">Track</div>
+              <div class="font-medium">Pre‑pharmacy</div>
+            </div>
+            <div class="rounded-lg bg-slate-50 dark:bg-slate-900 p-4">
+              <div class="text-slate-500">Interests</div>
+              <div class="font-medium">Public health, patient care</div>
+            </div>
+            <div class="rounded-lg bg-slate-50 dark:bg-slate-900 p-4">
+              <div class="text-slate-500">Location</div>
+              <div class="font-medium">California</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-slate-500">© <span id="year"></span> Katrina Chao</div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:hello@example.com" class="hover:text-brand-600">Email</a>
+        <a href="https://www.linkedin.com/in/kachao/" target="_blank" rel="noopener" class="hover:text-brand-600">LinkedIn</a>
+        <a href="https://kachao-productions.crd.co/" target="_blank" rel="noopener" class="hover:text-brand-600">Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>

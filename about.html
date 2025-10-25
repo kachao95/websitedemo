@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About • Katrina Chao</title>
+  <meta name="description" content="About Katrina Chao — Microbiology student on the pre‑pharmacy track.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] }, colors: { brand: {50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a'} } } }, darkMode:'class' }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 dark:bg-slate-950/90 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex h-16 items-center justify-between">
+        <a href="/" class="flex items-center gap-2 font-semibold text-slate-900 dark:text-white">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">KC</span>
+          <span>Katrina Chao</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/about.html" class="text-brand-600">About</a>
+          <a href="/hobbies.html" class="hover:text-brand-600">Hobbies</a>
+          <a href="/extracurriculars.html" class="hover:text-brand-600">Extracurriculars</a>
+          <a href="/contact.html" class="hover:text-brand-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="theme-toggle" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">
+            <i data-lucide="moon" class="h-4 w-4"></i>
+          </button>
+          <button id="menu-toggle" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">
+            <i data-lucide="menu" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <div class="grid gap-2">
+          <a href="/about.html" class="px-3 py-2 rounded-md bg-slate-100 dark:bg-slate-900">About</a>
+          <a href="/hobbies.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Hobbies</a>
+          <a href="/extracurriculars.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Extracurriculars</a>
+          <a href="/contact.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-16">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">About</h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">I'm Katrina Chao, a microbiology student on the pre‑pharmacy track. I enjoy learning how small-scale biology shapes real-world health, and I’m passionate about serving my community through health outreach and education.</p>
+        <img src="https://picsum.photos/seed/about-lab/1200/600" alt="About page placeholder banner" class="mt-8 w-full aspect-[16/9] rounded-xl object-cover" loading="lazy" />
+        <div class="mt-10 grid gap-6 sm:grid-cols-2">
+          <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-6">
+            <div class="flex items-center gap-2 text-slate-500"><i data-lucide="flask-conical" class="h-4 w-4"></i> Focus areas</div>
+            <ul class="mt-3 space-y-2 text-sm list-disc list-inside">
+              <li>Microbial diagnostics</li>
+              <li>Antibiotic stewardship</li>
+              <li>Public health</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-6">
+            <div class="flex items-center gap-2 text-slate-500"><i data-lucide="target" class="h-4 w-4"></i> Goals</div>
+            <ul class="mt-3 space-y-2 text-sm list-disc list-inside">
+              <li>Prepare for pharmacy school</li>
+              <li>Advocate for patient-centered care</li>
+              <li>Grow as a scientific communicator</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-10 rounded-xl border border-slate-200 dark:border-slate-800 p-6">
+          <h2 class="text-xl font-semibold">Experience highlights</h2>
+          <ul class="mt-4 grid gap-4">
+            <li class="rounded-lg bg-slate-50 dark:bg-slate-900 p-4 flex items-start justify-between">
+              <div>
+                <div class="font-medium">Lab Assistant, Microbiology Dept</div>
+                <div class="text-sm text-slate-500">Prepared media, maintained cultures, and logged results.</div>
+              </div>
+              <div class="text-xs text-slate-500">2024</div>
+            </li>
+            <li class="rounded-lg bg-slate-50 dark:bg-slate-900 p-4 flex items-start justify-between">
+              <div>
+                <div class="font-medium">Volunteer, Community Health Fair</div>
+                <div class="text-sm text-slate-500">Supported pharmacists and assisted visitors at screenings.</div>
+              </div>
+              <div class="text-xs text-slate-500">2025</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-slate-500">© <span id="year"></span> Katrina Chao</div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:hello@example.com" class="hover:text-brand-600">Email</a>
+        <a href="https://www.linkedin.com/in/kachao/" target="_blank" rel="noopener" class="hover:text-brand-600">LinkedIn</a>
+        <a href="https://kachao-productions.crd.co/" target="_blank" rel="noopener" class="hover:text-brand-600">Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>

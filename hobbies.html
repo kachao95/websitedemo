@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hobbies • Katrina Chao</title>
+  <meta name="description" content="Hobbies of Katrina Chao — photography, baking, hiking, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] }, colors: { brand: {50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a'} } } }, darkMode:'class' }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 dark:bg-slate-950/90 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex h-16 items-center justify-between">
+        <a href="/" class="flex items-center gap-2 font-semibold text-slate-900 dark:text-white">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">KC</span>
+          <span>Katrina Chao</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="/about.html" class="hover:text-brand-600">About</a>
+          <a href="/hobbies.html" class="text-brand-600">Hobbies</a>
+          <a href="/extracurriculars.html" class="hover:text-brand-600">Extracurriculars</a>
+          <a href="/contact.html" class="hover:text-brand-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="theme-toggle" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">
+            <i data-lucide="moon" class="h-4 w-4"></i>
+          </button>
+          <button id="menu-toggle" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900">
+            <i data-lucide="menu" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <div class="grid gap-2">
+          <a href="/about.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">About</a>
+          <a href="/hobbies.html" class="px-3 py-2 rounded-md bg-slate-100 dark:bg-slate-900">Hobbies</a>
+          <a href="/extracurriculars.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Extracurriculars</a>
+          <a href="/contact.html" class="px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-900">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Hobbies</h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Creativity and balance matter to me, from making photos to baking and staying active outdoors.</p>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div id="photography" class="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+            <img src="https://picsum.photos/seed/hobby-photo/800/450" alt="Photography placeholder" class="aspect-video w-full object-cover" loading="lazy" />
+            <div class="p-5">
+              <h3 class="font-semibold">Photography</h3>
+              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Documenting everyday life and campus events.</p>
+            </div>
+          </div>
+          <div id="baking" class="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+            <img src="https://picsum.photos/seed/hobby-baking/800/450" alt="Baking placeholder" class="aspect-video w-full object-cover" loading="lazy" />
+            <div class="p-5">
+              <h3 class="font-semibold">Baking</h3>
+              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Experimenting with flavors and techniques.</p>
+            </div>
+          </div>
+          <div id="hiking" class="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+            <img src="https://picsum.photos/seed/hobby-hiking/800/450" alt="Hiking placeholder" class="aspect-video w-full object-cover" loading="lazy" />
+            <div class="p-5">
+              <h3 class="font-semibold">Hiking</h3>
+              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Exploring local trails and staying active.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-14 text-xl font-semibold">Gallery</h2>
+        <div class="mt-6 grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+          <img src="https://picsum.photos/seed/gallery-1/600/600" alt="Gallery item 1" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+          <img src="https://picsum.photos/seed/gallery-2/600/600" alt="Gallery item 2" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+          <img src="https://picsum.photos/seed/gallery-3/600/600" alt="Gallery item 3" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+          <img src="https://picsum.photos/seed/gallery-4/600/600" alt="Gallery item 4" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+          <img src="https://picsum.photos/seed/gallery-5/600/600" alt="Gallery item 5" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+          <img src="https://picsum.photos/seed/gallery-6/600/600" alt="Gallery item 6" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+          <img src="https://picsum.photos/seed/gallery-7/600/600" alt="Gallery item 7" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+          <img src="https://picsum.photos/seed/gallery-8/600/600" alt="Gallery item 8" class="aspect-square w-full rounded-lg object-cover" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-slate-500">© <span id="year"></span> Katrina Chao</div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:hello@example.com" class="hover:text-brand-600">Email</a>
+        <a href="https://www.linkedin.com/in/kachao/" target="_blank" rel="noopener" class="hover:text-brand-600">LinkedIn</a>
+        <a href="https://kachao-productions.crd.co/" target="_blank" rel="noopener" class="hover:text-brand-600">Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>
